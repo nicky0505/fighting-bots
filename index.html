@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hydro Fighting Bots</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@700;800;900&family=Dosis:wght@400;600;700;800&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav>
+    <div class="logo">⚡ HYDRO FIGHTING BOTS</div>
+    <ul class="nav-links">
+      <li><a href="#hero">Order</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#how-it-works">How It Works</a></li>
+      <li><a href="#bots">The Bots</a></li>
+      <li><a href="#why">Why It Matters</a></li>
+      <li><a href="#team">Our Team</a></li>
+    </ul>
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+  </nav>
+
+  <!-- HERO / ORDER -->
+  <section id="hero">
+    <div class="hero-left">
+      <p class="hero-tag">⚙️ HYDRAULIC BATTLE ROBOTS</p>
+      <h1>BUILT TO<br/><span class="red">FIGHT.</span><br/>BUILT TO<br/><span class="blue">LAST.</span></h1>
+      <p class="hero-sub">Safe, hydraulic-powered fighting robots built for hands-on learning and real engineering excitement. Order yours today.</p>
+    </div>
+    <div class="hero-right">
+      <div class="order-card">
+        <h2>🥋 Get Your Hydro Bot</h2>
+        <p>Fill out the form and we'll reach out to you!</p>
+        <input type="text" id="name" placeholder="Your Name" />
+        <input type="email" id="email" placeholder="Your Email" />
+        <select id="bot-choice">
+          <option value="">Choose Your Bot</option>
+          <option value="alpha">🔴 Hydro-Bot Alpha</option>
+          <option value="omega">🔵 Hydro-Bot Omega</option>
+          <option value="both">⚡ Both Bots (Full Set)</option>
+        </select>
+        <input type="text" id="message" placeholder="Any questions or comments?" />
+        <button onclick="submitForm()">SEND REQUEST ⚡</button>
+        <p id="form-msg"></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="section-label">THE BASICS</div>
+    <h2>What Are Hydro Fighting Bots?</h2>
+    <p class="section-sub">Hydraulic-powered robots that use fluid pressure to create real, controlled movement — just like the machines used in industry and medicine.</p>
+    <div class="cards">
+      <div class="card"><h3>👤 Who?</h3><p>Engineers, doctors, factory workers, and athletes in training.</p></div>
+      <div class="card"><h3>🤖 What?</h3><p>Robots powered by fluid pressure to create controlled movement.</p></div>
+      <div class="card"><h3>🏭 Where?</h3><p>Machinery, medical devices, and industrial robots.</p></div>
+      <div class="card"><h3>⏱️ When?</h3><p>Any task needing strength, precision, and repeatability.</p></div>
+      <div class="card"><h3>💡 Why?</h3><p>To make dangerous or repetitive tasks safer and more efficient.</p></div>
+      <div class="card"><h3>⚙️ How?</h3><p>A small force pushes fluid through a tube, transferring that force into movement.</p></div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section id="how-it-works">
+    <div class="section-label">THE SCIENCE</div>
+    <h2>How It Works</h2>
+    <p class="section-sub">Three simple steps. Real engineering.</p>
+    <div class="steps">
+      <div class="step">
+        <span>1</span>
+        <h4>Apply Force</h4>
+        <p>Push or pull the syringe to start the system</p>
+      </div>
+      <div class="arrow">→</div>
+      <div class="step">
+        <span>2</span>
+        <h4>Fluid Transfers</h4>
+        <p>Liquid moves through the tube carrying the force</p>
+      </div>
+      <div class="arrow">→</div>
+      <div class="step">
+        <span>3</span>
+        <h4>Precise Motion</h4>
+        <p>The robot arm moves with speed and control</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- THE BOTS -->
+  <section id="bots">
+    <div class="section-label">THE COMPETITORS</div>
+    <h2>Meet The Bots</h2>
+    <p class="section-sub">Two bots. One arena. Who will win?</p>
+    <div class="bots-container">
+      <div class="bot alpha">
+        <div class="bot-img-wrapper">
+          <img src="images/omega-removebg-preview.png" alt="Hydro-Bot Alpha" />
+        </div>
+        <h3>🔴 Hydro-Bot Alpha</h3>
+        <p>Aggressive pushing style. Built for forward pressure and control.</p>
+      </div>
+      <div class="vs">VS</div>
+      <div class="bot omega">
+        <div class="bot-img-wrapper">
+          <img src="images/alpha-removebg-preview.png" alt="Hydro-Bot Omega" />
+        </div>
+        <h3>🔵 Hydro-Bot Omega</h3>
+        <p>Balanced and reactive. Built for tilt, balance, and counter-moves.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY IT MATTERS -->
+  <section id="why">
+    <div class="section-label">THE IMPACT</div>
+    <h2>Why It Matters</h2>
+    <p class="section-sub">Hydraulics aren't just for our bots — they power the real world.</p>
+    <div class="cards">
+      <div class="card"><h3>🏗️ Industry</h3><p>Used in excavators, factory robots, and heavy machinery worldwide.</p></div>
+      <div class="card"><h3>🏥 Medicine</h3><p>Powers precise medical devices, surgical tools, and prosthetics.</p></div>
+      <div class="card"><h3>🎓 Education</h3><p>Hands-on learning that builds real engineering skills in students.</p></div>
+    </div>
+  </section>
+
+  <!-- TEAM -->
+  <section id="team">
+    <div class="section-label">THE BUILDERS</div>
+    <h2>Our Team</h2>
+    <p class="section-sub">Four students. One hydraulic vision.</p>
+    <div class="team-grid">
+      <div class="member"><div class="avatar">N</div><p>Nicolas</p></div>
+      <div class="member"><div class="avatar">A</div><p>Adrian</p></div>
+      <div class="member"><div class="avatar">An</div><p>Anthony</p></div>
+      <div class="member"><div class="avatar">D</div><p>Darius</p></div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>⚡ HYDRO FIGHTING BOTS — Built by Nicolas, Adrian, Anthony & Darius</p>
+    <p class="footer-sub">Safe. Precise. Innovative.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
